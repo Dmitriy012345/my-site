@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парикмахерская</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <nav>
+          <div class="links">
+            <a class="wow" href="../index.html">КОНТАКТЫ</a>
+            <a class="wow" href="../index.html">УСЛУГИ И ЦЕНЫ</a>
+            <a class="wow" href="../index.html">О НАС</a>
+            <a class="wowa" href="../index.html"><img src="../img/лого.png" alt=""></a>
+            <a class="wow" href="../index.html">СПЕЦИАЛИСТЫ</a>
+            <a class="wow" href="../index.html">ПРЕИМУЩЕСТВА</a>
+            <a class="wowan" href="регистрация.html"><button class="nav-button">ЗАПИСАТЬСЯ</button></a>
+          </div>
+        </nav>
+     </div>
+      <div class="conteiner-2">
+      <div class="img-salon"><img src="../img/парикмахерская.avif" alt=""></div>
+      <div class="div-text-salon"><p class="text-salon">У нас в парикмахерской можно получить услуги по смене прически, стрижке волос, окрашиванию, укладке и другим процедурам, чтобы выглядеть привлекательно и ухоженно. В парикмахерской создается приятная атмосфера, где клиенты могут расслабиться и доверить свои волосы профессионалам, заботящимся о красоте и здоровье волос.</p></div>
+    </div>
+    <div class="conteiner">
+    <div class="salon-about">
+    <h1>Стоимость:</h1>
+    <p class="p-salon">Обычная стрижка: 300р</p>
+    <p class="p-salon">Покраска волос: 1000-1500р</p>
+    <p class="p-salon">Личная консультация со специалистом: 2000р</p>
+    
+    <input type="date"  class="btn-data" >
+    
+    <button id="openModal" class="btn_bron">Забронировать</button>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button class="close">Закрыть</button>
+        <p>Дата забронирована!</p>
+      </div>
+    </div>
+    <div class="pay">
+    <button onclick="myFunction()" class="btn-pay">Нажмите чтобы выбрать способ оплаты</button>
+    <script>
+      function myFunction() {
+          let person = prompt("Введите способ оплаты");
+          if (person != null) {
+              document.getElementById("name").innerHTML = person;
+          }
+      }
+  </script>
+  <p id="name">Наличный рассчет</p>
+    </div>
+    </div>    
+     <div class="calendar"><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FSimferopol&bgcolor=%23ffffff&showTitle=0&src=ZGltYXBlcnZ5Y2g2NjZAZ21haWwuY29t&src=ZTE2MTM5OGUwOGI3YzBlOGNjZWVlNjAyMzRkYmYwMTY5ZDg3N2Q5YjI0ODk2MDBlN2U4YmZiYWRmZDA1NmEzOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cnUudXNhLm9mZmljaWFsI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%238E24AA&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" ></iframe></div>
+     </div>
+     <footer>
+      <h2 class="footer_h2">Наши партнёры:</h2>
+     <div class="footer-banks">
+      <a href="https://www.tinkoff.ru/" class="img-banks"><img src="../img/тинькофф.png" alt=""></a><a href="https://alfabank.ru/" class="img-banks"><img src="../img/альфабанк.png" alt=""></a><a href="https://www.rncb.ru/" class="img-banks"><img src="../img/рнкб.png" alt=""></a></div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
